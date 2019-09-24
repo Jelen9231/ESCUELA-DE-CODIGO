@@ -1,0 +1,13 @@
+.titulo{
+    background-color: darkorange;
+    color: black;
+    border-radius: 30%;
+    font-family: 'Libre Caslon Display', serif;
+    text-align: center;
+    width: 100%;
+}
+
+body{
+    background: rgb(247, 233, 108);
+}
+

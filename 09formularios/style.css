@@ -1,0 +1,94 @@
+h1{
+    background: seashell;
+    color: black;
+    border: 4px solid blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    font-size: 300%;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(73, 238, 238);
+    color: rgb(206, 7, 107);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+label{
+    /* se asigna color al label */
+    color: rgb(239, 243, 22);
+    font-family:Roboto;
+    font-size: 20px;
+}
+
+/* input[type=""] es un pseudo selector por elementos, cambia el formato de cada formulario */
+input[type=text], input[type=number], input[type=email], input[type=password]{
+
+    /* esta propiedad muestra el fondo del input por defaul, al poner none se le indica no presentarlo */
+    background: none;
+    /* esta propiedad indica no colocar el borde que trae por defaul el input */
+    border: none;
+    /* esta propiedad me permite colocar una linea o borde abajo del input con caracterisiticas diferentes */
+    border-bottom: 2px solid rgb(24, 10, 212);
+    /* outline es la marca por defaul que muestra al colocar el cursor sobre el input y no queremos mostrarla */
+    outline: none;
+    /* width es el margen que le damos para vista de la pantalla */
+    width: 80%;
+    /* margin top da espacios entre cada rubro del formulario para que no se vea todo junto */
+    margin-top: 20px;
+    /* este color es la fuente del input */
+    color: rgb(216, 11, 216);
+    /* tamaño de la misma fuente */
+    font-size: 20px;
+    /* margin left nos da un espacio entre el input y el label para no observarlo todo junto */
+    margin-left: 20px;
+    /* text aline nos indica desde que parte queremos se inicie el texto cuando se escribe */
+    text-align: center 
+}
+
+
+button{
+    /* Ancho del boton para hacerlo un cuadrado perfecto*/
+    width: 80px;
+    /* Alto del boton para hacerlo un cuadrado perfecto*/
+    height: 80px;
+    /* espacio entre el boton y el ultimo input para que no se vea junto */
+    margin-top: 30px;
+    /* borde de alrededor del boton */
+    border: 5px solid yellow;
+    /* para realizar el cambio de un cuadrado a un circulo */
+    border-radius: 50%;
+    /* outline es la marca por defaul que muestra al colocar el cursor y dar clic en el, no queremos mostrarla */
+    outline: none;
+    /* tipo de fuente */
+    font-family: cursive;
+    /* fondo del boton */
+    background-color: rgb(3, 16, 58);
+    /* color de la fuente del texto del boton */
+    color:white;
+    /* box-shadow: red 3px 3px 3px; sirve para darle una sombra alrededor del boton */
+    box-shadow: red 3px 3px 3px;
+    /* este margin left en porcentaje nos indica en que pocision del ancho de la pantalla queremos que se vea el boton */
+    margin-left: 70%;
+}
+
+
+    /* es un boton flotontate mediante el selector de hover, cuando pasamos el cursor sobre el boton le da una caracteristica sobresaliente */
+button:hover{
+    background-color: chartreuse;
+    width: 90px;
+    height: 90px;
+    color:black;
+    font-size: 25px;
+}
+
+/* propiedad  list style que oculta un estilo de las listas desordenadas, retirtando las viñetas */
+ul{
+    list-style: none;
+/* perimite colocar un borde lineal */
+    border-left: 5px solid yellow;
+    margin-left: 8%;
+
+}
+

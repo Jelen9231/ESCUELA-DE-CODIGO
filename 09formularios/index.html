@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+
+    <!-- form es una etiqueta de bloque par que hace referencia a formularios -->
+    <form action="">
+
+        <!-- etiqueta par  que emgloba nombre del texto para input -->
+        <label for="Nombre">Nombre</label>
+        <!-- input es una etiqueta simple, cajas donde recabamos informacion del formulario -->
+        <!--  tipe, que tpo de texto es, valor de texto alfabetico -->
+        <input type="text" placeholder="Ingresa tu nombre" required name="" id="">
+        <!-- placeholder permite dar informacion al usuario para saber que debe colocar en el input -->
+        <!-- requiere envia un mensaje de llenado de datos cuando no se han colocado los datos y evita enviar los formularios -->
+        <br>
+        <br>
+        <!-- valor numerico -->
+        <label for="Edad">Edad</label>
+        <input type="number" placeholder="Ingresa tu edad" required min="1" max="110" name="" id="">
+        <!--MIN Y MAX SI SE PUEDE UTILIZAR PARA TEXTO  -->
+        <br>
+        <br>
+        <!-- valor formato de email -->
+        <label for="Email">Email</label>
+        <input type="email" placeholder="Ingresa tu correo" required name="" id="">
+        <br>
+        <br>
+        <!-- password  VALOR DE TEXTO TIPO PASSWORD permite colocar una contraseña al formulario contiene dos propiedades como minimo MINLENGTH y maximo MAXLENGTH SOLO ES PARA LOS NUMERICOS-->
+        <label for="Password">Password</label>
+        <input type="password" placeholder="Ingresa tu contraseña" required minlength="9" maxlength="20" name="" id="">
+
+        <br>
+        <br>
+        <button>Enviar</button>
+
+    </form>
+
+
+    <hr>
+    <!-- caja de chequeo automatico  harkodeado -->
+    <h2>checkbox</h2>
+
+    <form action="">
+
+        <ul>
+            <!-- propiedad checked cheoqueo automatico o harkodeado permite ver en pantalla que ya esta marcado el check box el nombre y el id deben coincidir -->
+            <!-- disable propiedad que apaga o desactiva el checkbox no permite le demos click para hacer cambio -->
+            <li><input type="checkbox" name="cafe" id="cafe" checked disabled>
+                <label for="cafe">cafe</label>
+            </li>
+            <li><input type="checkbox" name="te" id="te" checked>
+                <label for="te">té</label>
+            </li>
+            <li><input type="checkbox" name="frapuchino" id="frapuchino">
+                <label for="frapuchino">frapuchino</label>
+            </li>
+            <li><input type="checkbox" name="chocolate" id="chocolate">
+                <label for="chocolate">chocolate</label>
+            </li>
+            <li><input type="checkbox" name="" id="Agua">
+                <label for="Agua">Agua</label>
+            </li>
+        </ul>
+
+    </form>
+
+
+    <!-- ul>li*3>input:radio>label{x $} -->
+
+    <h2>Radio butoon</h2>
+
+    <form action="">
+        <ul>
+            <!-- propiedad Value indica un valor al checkbox y maneja el checkbox como un circulo. El name debe ser igual para los input y asi se elija solo una opcion-->
+            <li><input type="radio" name="Genero" id="Masculino" value="Masculino">
+                <label for="Masculino">Masculino</label>
+            </li>
+            <li><input type="radio" name="Genero" id="Femenino" value="Femenino">
+                <label for="Femenino">Femenino</label>
+            </li>
+            <li><input type="radio" name="Genero" id="Otro" value="Otro">
+                <label for="Otro">Otro</label>
+            </li>
+        </ul>
+
+
+    </form>
+
+    
+
+
+
+
+</body>
+
+</html>

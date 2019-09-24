@@ -1,0 +1,72 @@
+/* ctrl + } */
+/* selector por elemento  */
+h1{
+    font-size: 60px;
+    background: rgba(121, 4, 4, 0.863);
+    color:rgb(25, 11, 224);
+    /* ancho */
+    width: 50%;
+    /* margen derecho */
+    margin-left: 30%;
+    /* alineación del texto */
+    text-align: center;
+    /* borde de circunferencia */
+    border-radius: 40px;
+}
+
+/* selector por id */
+p {
+    background: red;
+    font-size: 15px;
+}
+
+p {
+    background: springgreen;
+}
+
+p {
+    background: red;
+    font-size: 15px;
+}
+
+#estilo1 {
+    background: blue;
+    color: aliceblue;
+    width: 40%;
+}
+
+#estilo2 {
+    background: black;
+    color: aliceblue;
+}
+
+#estilo3 {
+    background: yellow;
+    font-size: 50px;
+}
+.claseA {
+    background: rgb(53, 11, 241);
+    color: aqua;font-size: 30px;
+}
+
+.claseB {
+    background: deeppink;
+}
+
+.claseC {
+    font-size: 30px;
+}
+
+#carlos{
+    background: cyan;
+    color: white;
+    font-size: 20px;
+
+}
+
+/* selector por clase */
+.clasecarlos{
+    background: rgb(56, 35, 116);
+    color: rgb(177, 7, 7);
+    font-size: 10px;
+}

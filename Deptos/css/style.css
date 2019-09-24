@@ -1,0 +1,725 @@
+/* ESTILO PARA EL PROEYECTO DEPARTAMENTOS */
+
+/* RECURSOS */
+
+/* PALETA DE COLORES */
+
+/* As hex codes */
+
+.color-primary-0 { color: #777777 }	/* Main Primary color */
+.color-primary-1 { color: #D3D3D3 }
+.color-primary-2 { color: #A3A3A3 }
+.color-primary-3 { color: #434343 }
+.color-primary-4 { color: #040404 }
+
+.color-secondary-1-0 { color: #4F4F4F }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #8C8C8C }
+.color-secondary-1-2 { color: #6C6C6C }
+.color-secondary-1-3 { color: #2C2C2C }
+.color-secondary-1-4 { color: #020202 }
+
+.color-secondary-2-0 { color: #757575 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #D1D1D0 }
+.color-secondary-2-2 { color: #A2A2A1 }
+.color-secondary-2-3 { color: #424242 }
+.color-secondary-2-4 { color: #040404 }
+
+
+
+/* As RGBa codes */
+
+.rgba-primary-0 { color: rgba(119,119,119,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(211,211,211,1) }
+.rgba-primary-2 { color: rgba(163,163,163,1) }
+.rgba-primary-3 { color: rgba( 67, 67, 67,1) }
+.rgba-primary-4 { color: rgba(  4,  4,  4,1) }
+
+.rgba-secondary-1-0 { color: rgba( 79, 79, 79,1) }	/* Main Secondary color (1) */
+.rgba-secondary-1-1 { color: rgba(140,140,140,1) }
+.rgba-secondary-1-2 { color: rgba(108,108,108,1) }
+.rgba-secondary-1-3 { color: rgba( 44, 44, 44,1) }
+.rgba-secondary-1-4 { color: rgba(  2,  2,  2,1) }
+
+.rgba-secondary-2-0 { color: rgba(117,117,117,1) }	/* Main Secondary color (2) */
+.rgba-secondary-2-1 { color: rgba(209,209,208,1) }
+.rgba-secondary-2-2 { color: rgba(162,162,161,1) }
+.rgba-secondary-2-3 { color: rgba( 66, 66, 66,1) }
+.rgba-secondary-2-4 { color: rgba(  4,  4,  4,1) }
+
+
+/* FUENTES */
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+/* GENERALES */
+body{
+    /*  asigando la */
+   font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* PARTICULARES */
+
+/* HEADER */
+
+/* estilo del header con el id cabecera */
+#cabecera{
+    /* borde de 2px de ancho punteado  */
+    /* border: 2px dotted greenyellow; */
+    /* altura = al total de la pantalla */
+    /* height: 100vh; */
+    
+}
+
+
+/* CLASE PARA LA PARTE DEL HEADER, ASI QUIERO SE COMPORTE CON LAS PROPIEDADES AQUI DESCRITAS */
+.inicio{
+    /* propiedad background-image permite colocar una imagen del fondo en el header, junto con el url que es la propiedad que indica donde esta la ruta de dicha imagen */
+    /* DIFERENCIA ENTRE:
+    / SLASH- PERMITE ENTRAR A UNA RUTA INDICADA DE UNA CARPETA
+    ./ PUNTO SLASH- TE SACA DE LA RUTA QUE YA NO UTILIZARAS DENTRO DE UNA CARPETA, CAMBIO DE ARCHIVO
+    ../ DOS PUNTOS SLASH PERMITE SALIR DE LA RUTA DONDE TE ENCUENTRAS DE UN ARCHIVO Y REDIRIGIRTE A LA CARPETA Y EL ARCHIVO DESEADO*/
+    /* llamando a la imagen */
+    background-image: url(../img/header.jpg); 
+    /* todo el alto de la pantalla */
+    height: 100vh;
+    /* centrando la imagen */
+    background-position: center;
+    /* medidad de img cover, propiedad que indica que cubra todo el header*/
+    background-size: cover;
+}
+
+/* Clase para contendor */
+.contenedor{
+    /* border: 2px solid rgb(219, 13, 192); */
+    /* max-width indica que quiero que dicha caja se comporte en medida relativa es decir no tenga modificacion alguna al momento de maximizar o minimizar o viendolo en cualquier pantalla */
+    max-width: 1200px;
+    /* height: 80vh; */
+    /* top right bottom  left*/
+    /* este margen tiene 4 bordes top, right, left y bottom */
+    margin: 0 auto 0 auto;
+    
+}
+
+/* clase para seccion barra */
+.barra{
+    /* Permite que los contenidos o cajas se comporten de manera fleixible lineal colocandolas todad en una misma fila */
+    display: flex;
+    /* El contenido de esas cajas lo justifica colocando espacios entre ellos */
+    justify-content:space-between;
+    /* esta propiedad centra los items dentro de estas cajas */
+    align-items: center;
+    /* es el espacio entre el contenido del elemento y su borde */
+    padding: 15px;
+}
+
+/* herencia padre y el hijo */
+.navegacion a{
+    /* color de fuente barra navegació */
+    color: #fff;
+    /* la decoracion que coloca como linea abajo no se lo ponga */
+    text-decoration: none;
+    /* estilo fuente */
+    font-family: 'Lato', sans-serif;
+    /* tamaño de fuente */
+    font-size: 15px;
+    /* margen entre cada opcion de la barra de navegación */
+    margin-left: 10px;
+    
+}
+
+/* pseudoselector */
+.navegacion a:hover{
+    /* tamaño de fuente al colocar el cursor */
+    font-size: 18px;
+    /* cambia color de fuente al colocar el cursor */
+    color: gold;
+}
+
+/* clase del contenido del header */
+.contenido-header{
+    /* Ancho del 100% */
+    height: 100%;
+    /* Permite que los contenidos o cajas se comporten de manera fleixible lineal colocandolas todad en una misma fila */
+    display: flex;
+    /* color de fuente */
+    color: #fff;
+
+    /* propiedad que permite colocar, las cajas flexibles en columnas */
+    flex-direction: column;
+    /* esta propiedad centra los items dentro de estas cajas */
+    justify-content: space-between;
+
+}
+
+/* clase para el footer del header */
+.footer-header{
+    /* margen izquierdo de 20px */
+    margin-left: 20px;
+}
+
+
+ /* ICONOS */
+/* estilo para section de iconos  */
+#iconos{
+    /* dashet propiedad de aspecto en los bordes */
+    /* border: 2px dashed rgb(255, 47, 238); */
+    /* el 60$ de la altura total de una pantalla  */
+    /* height:60vh; */
+}
+
+/* clase para titulos */
+.titulo{
+    text-align: center;
+}
+
+/* clase iconos nosotros */
+.iconos-nosotros{
+    /* border: 2px dotted rgb(32, 204, 10); */
+    /* propiedad que muestra un borde punteado y de color  */
+    /* Permite que los contenidos o cajas se comporten de manera fleixible lineal colocandolas todad en una misma fila */
+    display: flex;
+    /* Propiedad de justifica el contenido en todo es espacio */
+    justify-content: space-around;
+}
+
+/* clases de icono */
+.icono{
+    /* border: 2px dotted rgb(204, 97, 10); */
+    /* texto de alineacion en el centro */
+    text-align: center;
+    /* Propiedad de una base flexible de algun elemento */
+    flex-basis: calc(33.3% - 2rem);
+}
+
+/* clase para iconos p */
+.icono p{
+    /* propiedad que justifica o alinea el texto en justificar */
+    text-align: justify;
+}
+
+/* pseudo selector */
+.icono h3:hover{
+    /* aumenta solo el tamaño de la fuente aumente en 30'x */
+    font-size: 30px;
+}
+
+
+/* CLASES PARA EL MAIN */
+/*  */
+#principal{
+    /*  */
+    /* border: 2px solid cyan;  */
+    /*  */
+    /* height: 100vh; */
+}
+
+/* Clase para slider */
+.slider{
+    /* Es el ancho del contenido de la pantalla */
+    width: 95%;
+    /* margen que se comporte de manera auto */
+    margin: auto;
+    /* overflow es una propiedad que significa sobresalir o desbordamiento permite que dichas cajas de comporten de manera de manera horizontal */
+    overflow: hidden;
+}
+
+/* clase por elemento para listas ul es decir, los hijos de slider son ul */
+.slider ul{
+    /* Permite visualizar de manera felixble las cajas */
+    display: flex;
+    /* Margen dentro de la imagen */
+    padding: 0;
+    /*  es el ancho, aqui quiero que cada imagen se comporte en un 100% de mi caja para hacerle una animacion, depende la cantidad de imagenes es la cantidad del %  */
+    width: 300%;
+    /* TODO aqui va la animación */
+
+    /* Nueva propiedad, animacion, permite que las imagenes tengan movimiento, su propedad indica un alternativo lineal infinito con un cambio entre cada imagen de 20s  */
+    animation: cambio 20s infinite alternate linear ;
+
+}
+
+  /*clase por elemento para los hijos li de slider que es el padre */
+.slider li{
+    /* margen del 100% entre cada imagen */
+    width: 100%;
+    /* estilo de la lista no quiero se vea */
+    list-style: none;
+}
+
+/* clase card para cada caja */
+.slider .card{
+    /* fondo de la caja  */
+    background-color: #191B26;
+    /* borde de la caja inferior solo del lado izquierdo se vea curvado  */
+    /* border: solid 3px gold; */
+    border-bottom-left-radius: 200px;
+    /*  borde de alrededor de dicha caja  */
+    border: 5px solid #fff;
+
+}
+
+/* clase card body de slider  */
+.slider .card-body{
+    /* borde de alrededor */
+    border: 5px solid #fff;
+    /* permite que la caja sea flexible */
+    display: flex;
+    /* border: 3px solid gold; */
+    border: 3px solid gold;
+    /* borde de la caja inferior solo del lado izquierdo se vea curvado */
+    border-bottom-left-radius: 200px;
+    /* contenido justificado en cuestion de imagenes y texto */
+    justify-content: space-around;
+    /* alinea todos los elementos al centro */
+    align-items: center;
+}
+
+/* clase slider para los hijos de slider imagenes */
+.slider img{
+    /* Ancho del 100% */
+    width: 100%;
+    /* Altura del 60 viewportheat toda la pantalla */
+    height: 60vh;
+}
+
+.detalles{
+    /* color de la fuente */
+    color: #fff;
+    /* margen dentro de la imagen para separar texto del margen */
+    padding: 20px;
+    /* da un margen fuera del elemento */
+    margin-left: 10%
+
+}
+
+/* clase para opaco */
+.opaco{
+    /* clase que da color a parte del texto de los detalles */
+    color: #4F4F4F;
+}
+
+.boton{
+    /* margen para hacer una caja del boton ancho */
+    width: 120px;
+    /* margen para hacer una caja del boton alto */
+    height: 120px;
+    /* contorno de ese borde de la caja  */
+    border: 3px solid gold;
+    /* centramos el texto  */
+    text-align: center;
+    /* fondo del color del boton */
+    background-color:#191B26;
+    /*permite que el borde sea mas circular hacia las puntas no totalmente cuadrado  */
+    border-radius: 15px;
+    
+}
+
+/* Estilo para el boton propiedad */
+a{
+    /* Margen de altura de la imagen del boton */
+    margin-top: 5px;
+    /* color del texto propiedad */
+    color: #fff;
+    /* color del texto propiedad */
+    text-decoration: none;
+
+}
+
+/* permite dar clase a la imagen dentro de la caja que hicimos para que sea visible */
+.boton img{
+    /* ancho mas pequeño que el de la caja inicial para visualizarlo */
+    width: 100px;
+    /* alto mas pequeño que el de la caja inicial para su visibilidad  */
+    height: 80px;
+
+}
+
+/* clase centro */
+.centro{
+    /* Ancho del 40% */
+    width: 40%;
+    /* margen izquierdo del 30% */
+    margin-left: 30%;
+    /* borde solido de 3px color dorado */
+    border: solid 3px gold;
+    /* fondo de la papeleta de colores */
+    background: #191B26;
+    /* border en circulo de 15px */
+    border-radius: 15px;
+    /* texto alineado al centro */
+    text-align: center;
+    /* altura automatica */
+    height: auto;
+}
+
+/* clase centro de img */
+.centro img{
+    /* tiene un ancho de 100px */
+    width: 100px;
+    /* tiene una altura de 100px para realizarlo de modo cuadrado */
+    height: 100px;
+}
+/* Propiedad de animacion, puntos de trayectoria */
+@keyframes cambio{
+
+    /*  */
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    /*  */
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    /*  */
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    /*  */
+    75%{margin-left: 0;}
+    100%{margin-left: 0;}
+
+
+}
+
+/* CONTACTO */
+
+/*  */
+#contacto{
+    /*  */
+    border: 2px dotted rgb(223, 209, 17); 
+    /*  */
+    /* height: 50vh; */
+}
+
+/* IMPORTANTE EL DIA MARTES 27/08/2019 REALIZAMOS CAMBIOS EN EL FORMULARIO DE CONTACTO DESDE LA LINEA 370 */
+
+.datos{
+
+    /*  */
+    margin-top:5%;
+    /*  */
+    width: 90%;
+    /*  */
+    margin-left: 5%;
+    /*  */
+    display: flex;
+    /*  */
+    flex-direction: column;
+
+}
+
+.card{
+    /*  */
+    background-color:#191B26;
+    /*  */
+    border-radius: 15px;
+    /*  */
+    border:3px solid gold;
+}
+
+.card .card-header{
+    /*  */
+    text-align: center;
+    /*  */
+    padding: 15px;
+}
+
+.card .card-header .card-title{
+    /*  */
+    color: #fff;
+    /*  */
+    font-size: 1.5em;
+    /*  */
+    padding-bottom: 15px;
+    /*  */
+    margin: 15px auto;
+    /*  */
+    border-bottom: 2px solid #ff5a5f;
+    /*  */
+    width: 90%;
+}
+
+form{
+    /*  */
+    display: flex;
+    /*  */
+    flex-direction: column;
+    /*  */
+    padding: 0 35px 25px;   
+}
+
+form .input{
+    /*  */
+    border:none;
+    /*  */
+    outline: none;
+    /*  */
+    display: block;
+    /*  */
+    color: #fff;
+    /*  */
+    background-color: #191B26;
+    /*  */
+    padding: 10px 0 25px 0;
+    /*  */
+    border-bottom: 1px solid #6C6C6C;
+    /*  */
+    margin: 10px 0;
+    /* La propiedad transition es una propiedad Permite definir la transición entre dos estados de un elemento. Hay diferentes estados que pueden ser definidos utilizando pseudo-clases como :hover  */
+    transition: all 0.5s;
+
+
+}
+
+/* La pseudo-clase :focus CSS representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario hace clic, toca un elemento o lo selecciona con la tecla "Tab" del teclado. */
+
+form .input:focus{
+    /*  */
+    padding: 10px 0 40px 0;
+ 
+}
+
+/* para visualizar en todos los navegadores Webkit es un motor para navegadores de Código abierto, muchos navegadores actuales lo usan como base */
+/* La pseudo-clase :focus CSS representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario hace clic, toca un elemento o lo selecciona con la tecla "Tab" del teclado. */
+form .input:focus::-webkit-input-placeholder{
+  color: white;
+}
+  
+form .btn{
+    /* alineacion en patalla en bloque */
+    display: inline-block;
+    /*  */
+    background-color: #ff5a5f;
+    /*  */
+    color: #fff;
+    /*  */
+    border: none;
+    /*  */
+    border-radius: 2px;
+    /*  */
+    padding: 15px;
+    /*  */
+    margin-top: 25px;
+    /* alinearse */
+    /* La propiedad CSS align-self alinea los elementos flexibles de la línea flexible actual, reemplazando el valor de align-items. Si el límite transversal de alguno de los elementos está definido como auto, el valor de align-self es ignorado. */
+    align-self: flex-end;
+
+    /* La propiedad CSS:cursor especifica el tipo de cursor que se mostrara cuando este se encuentre sobre un elemento */
+    /* cursor usado cuando se pasa sobre enlaces (típicamente una mano) */
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background-color: #d8191f;
+}
+
+
+/* BLOG */
+#blog{
+    /* separacion entre las cajas */
+    margin-top: 3%;
+    /* boder del blog */
+    /* border: 2px solid rgb(219, 4, 173);  */
+    /*  */
+    /* height: 100vh; */
+    /* ancho */
+    width: 60%;
+    /* flota a la izquierda */
+    float: left;
+    /*  */
+    margin-bottom: 2%;
+  
+}
+
+.container{
+    /* display: flex */
+    /* flex-flow; row wrap; */
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* cajablog */
+.caja-blog{
+    /* total de la pantalla */
+    width: auto;
+    /* borde del rededor de esa caja */
+    border: 2px solid #757575;
+    /* margen auto para la caja */
+    width: auto;
+    /* altura de 400px  */
+    height: 25vh;
+    /* transfondo color negro por la opacidad de la imagen */
+    background-color: #020202;
+   /* movimiento de las imagenes */
+    transition: all 1s;
+     /* la propiedad position especifica como un elemento es posicionado en el documento. Las propiedades top, rigth, bottom y left determinan la ubicacion final de los elementos posicionados */
+    position: relative;
+    /* Alineacion del texto al centro */
+    text-align: center;
+
+}
+
+/* clase para las imagenes de la caja blog */
+.caja-blog img{
+    /* Ancho de la imagen cubra el 100% */
+    width: 100%;
+    /* tenga la misma altura en px de la caja */
+    height: 25vh;
+    /* opacidad del .2 para que se vea menos tenue de su color y asi luzca ante el transfondo */
+    opacity: .2;
+    /* que se tarde 5 segundos en que se ilumine */
+    transition: all 1s;
+
+}
+/* clase pseudoselector hover para que al colocar el cursor se ilumine */
+.caja-blog img:hover{
+    /* opacidad permite que al momento de colocar el cursor se ilumine gracias al fondo negro manejado manejandolo como una marca de agua. */
+    opacity: 1;
+    /* Permite observar que las imagenes al poner el cursor aumenten de tamaño */
+    height: 75vh;
+    
+}
+
+.caja-blog:hover{
+    height: 75vh;
+
+}
+
+p#headline{
+    /*  */
+    position: absolute;
+    /*  */
+    font-size: 1.5rem;
+    margin-left: -200%;
+    color: #fff;
+    top: 10%;
+    left: 10%;
+    transition: margin-left 1.5s;
+}
+
+p#descripcion{
+    /*  */
+    position: absolute;
+    font-size: 1rem;
+    /* text-align: center; */
+    color: rgb(236, 240, 240);
+    margin-left: 2%;
+    transition: margin-top 1.5s;
+    margin-top: 300px;
+
+}
+
+.caja-blog:hover p#headline{
+
+    margin-left: 10%;
+}
+
+.caja-blog:hover p#descripcion{
+
+    margin-top: -100px;
+}
+
+.text-blog{
+
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 1em;
+    width: 100%;
+    text-align: center;
+    display: block;
+    /* la propiedad z-index indica el z -order de un elemento y sus descendientes. Cuando varios elementos se superponen, z order determina cuales cubren a otros, un elemento con mayor z index generalmente cubre a otro menor */
+    z-index: 1;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+    /* letter-spacing -0.33em; */
+    transition: 1s all;
+}
+
+.text-blog:hover{
+
+    color: gold;
+    letter-spacing: .05em;
+    /* la propiedad text shadow agrega sombra al texto. Acepta una lista de sombras separadas por coma, para aplicarlas al texto y a la propiedad text-decorations del elemento  */
+    text-shadow: 1px 1px 8px #8C8C8C, 0 0 3px orange, 0 0 1px #757575;
+}
+
+
+/* COMENTARIOS */
+
+/* TESTIMONIALES */
+#comentarios{
+    /* margen del 3% entre cada una de las citas */
+    margin-top: 3%;
+
+    /* border: 2px solid rgb(4, 219, 4);  */
+    /* Alto de la pantalla del 100 */
+    /* height: 100vh; */
+    /* ancho */
+    width: 30%;
+    /*  */
+    float: right;
+
+    /* margin-left: 70% */
+}
+
+/*  */
+.comentarios{
+    background: #191B26;
+    /*  */
+    width: 95%;
+    /*  */
+    border-radius: 20px;
+    /*  */
+    text-align: justify;
+    /*  */
+    color: #fff;
+    /*  */
+    padding: 5px;
+    /*  */
+    border:4px dashed gold;
+    /*  */
+    margin-top: 10px;
+    /*  */
+    font-size: 12px;
+}
+
+.user{
+    /*  */
+    text-align: right;
+    /*  */
+}
+
+
+#pie{
+    /* borrando  */
+    clear: both;
+    /*  */
+    /* border: 2px solid rgb(16, 211, 236);  */
+    /*  */
+    height: 10vh;
+/*  */
+    display: flex;
+/*  */
+    background: #191B26;
+/*  */
+    padding: 20px;
+/*  */
+    justify-content: center;
+}
+
+

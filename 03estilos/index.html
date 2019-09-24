@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- estilo externo -->
+    <!-- link = mandar a llamar  -->
+    <!-- etiqueta simple -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- etiqueta par de bloque -->
+    <!-- estilo global o embebido -->
+    <style>
+        /* sintaxis de CSS */
+        /* ctrl+ llave de cierre } me genera un comentario */
+        /* selector, llaves(bloque), propiedades y valores */
+        /* seletor por nombre de elemento (nombres de etiquetas )*/
+        p{
+            background: darkseagreen;
+        }
+
+        /* selector por id #(numeral, hahstag, almohadilla,gato)seguidodeunnombresinespacio*/
+        #elena{
+            background: aqua;
+        }
+        #carambolas{
+            background: red;
+        }
+        /* selector por calse se define así 
+        .seguidodenombresinespacio */
+        .clase1{
+            font-size: 40px;
+        }
+        .clase2{
+            background: black;
+            color: cornsilk;
+        }
+
+    </style>
+    <title>Estilo</title>
+</head>
+<body>
+    <h1>ESTILOS</h1>
+    <hr>
+    <h2>estilo en linea</h2>
+    <!-- style es una propiedad backgorund un atributo y blue un valor -->
+    <p style="background: blue">contenido</p>
+    <del style="background: blueviolet;color:rgb(17, 240, 240);">ELENA, CLARA, ALE, JOAQUIN.</del>
+    <!-- pk n0.1 darle estilo a tres etiquetas  -->
+    <hr>
+    <h2>estilo global o embebido</h2>
+    <!-- p tiene estilo por elemento -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdam et repellendus aperiam nam eum expedita, molestiae sapiente deserunt est. Excepturi aliquam eaque ducimus provident delectus eius deserunt, enim quibusdam nisi animi? Repellendus error accusantium quo consequatur aut reiciendis at.</p>
+
+    <p id="elena">Lorem ipsum dolor sit amet.</p>
+    <p id="carambolas">Lorem ipsum dolor sit amet.</p>
+    <p class="clase1 clase2">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <!--pk no.2 3 estilos por cada selector  -->
+    <hr>
+    <h2>estilo externo</h2>
+    <p id="carlos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae unde aliquid exercitationem esse eveniet recusandae ducimus, quisquam, ab tempora consequuntur aut, ut neque temporibus ad obcaecati minus modi repudiandae deleniti?</p>
+    
+    <!-- p#carlos>lorem15 -->
+    <p id="carlos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsa praesentium dolor temporibus nihil eius.</p>
+    
+    <!-- p.clasecarlos>{esto es un h2 con estilo externo} -->
+    <h2 class="clasecarlos">esto es un h2 con estilo externo</h2>
+    
+</body>
+</html>

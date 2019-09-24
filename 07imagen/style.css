@@ -1,0 +1,43 @@
+h1{
+    background: yellow;
+    color: blue;
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+}
+
+figure{
+    border: 2px solid red;
+    width: 80%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue; 
+    text-align: center; 
+}
+
+figure img{
+    background: rgb(0, 255, 85); 
+    color: black;
+    width: 50%;
+
+}
+
+figure img caption{
+    border: 5px solid black;
+}
+body{
+    background: rgb(236, 229, 236);
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    margin-left: 5%;
+    
+
+}
+
+img{
+    width:50%;
+    height: 200px;
+    margin-left: 15%;
+    border-radius: 20%;
+    border: 60px; color: blueviolet;
+}

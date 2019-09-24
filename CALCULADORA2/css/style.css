@@ -1,0 +1,52 @@
+/* selector de etiqueta */
+body{
+    background-color: cadetblue;
+}
+
+fieldset{
+    border:  4px dotted white;
+    width: 40%;
+    margin-left: 30%;
+}
+
+/* selector por id */
+#reglas{
+    color:white;
+    font-size: 30%;
+}
+
+label{
+    color: white;
+    font-size: 15px;
+}
+
+input{
+    /* tipo de letra */
+    font:'Arial Narrow Bold', sans-serif;
+    /* no fondo */
+    background: none;
+    /* no borde */
+    border: none;
+    /* margen abajo */
+    border-bottom: 2px solid white;
+    /* linea al dar click no la muestres */
+    outline: none;
+    width: 60%;
+    margin-top: 20px;
+    color: orangered;
+    font-size: 20px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+/* estilo para boton */
+/* selector por clase */
+.carlos{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: burlywood;
+    border: 2px solid white;
+    margin-top: 15px;
+    cursor: pointer;
+}
